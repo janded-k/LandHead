@@ -1,0 +1,370 @@
+
+body{
+    background-color: #f2f2f291;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.first{
+background: linear-gradient(rgb(0,0,0, 0.76), rgb(0,0,0, 0.7)), url("./img/Skyscrapers-Eastern.webp") no-repeat center;
+height: 600px;
+max-width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(117, 7, 7); 
+    /* color: rgb(218, 38, 38); */
+    padding-top: 2px;
+}
+
+nav h2{
+    color: #f4f4f4;
+    padding-left: 25px;
+}
+
+.second{
+   text-align: center;
+    padding-top: 180px;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+ 
+.second button{
+    background-color: rgb(20, 20, 185);
+    height: 45px;
+    width: 150px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+}
+
+.mySlides {display: none;}
+.sproof img {
+    vertical-align: middle;
+    max-width: 100%;
+    padding-left: 50px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 30px 30px;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#offers, .cv{
+  display: flex;
+  width: 100%;
+  justify-content: space-around; 
+}
+
+.work img{
+  border-radius: 10px;
+  height: 350px;
+  width: 350px; 
+}
+
+.InTouch a {
+  display: block;
+text-align: center;
+}
+
+.services h1, .contact{
+  text-align: center;
+}
+
+.work button{
+  background-color: rgb(233, 67, 7);
+  height: 45px;
+  width: 95px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  
+}
+
+.team{
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team img{
+  max-width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.services, .InTouch, .loc{
+  /* background-color: rgb(45, 51, 136);  */
+  padding:  2px;
+}
+
+.name, .email{
+display: flex;
+flex-direction: column;
+height: 30px;
+width: 60%;
+height: 50px;
+padding: 20px 20px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 20px 20px;
+  }
+
+  textarea, [type=text], input[type=email]{
+    padding: 15px;
+    border-radius: 10px; 
+  }
+
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #b62f6e;
+}
+
+.smedia{
+  text-align: center;
+}
+
+.location{
+  height: max-content;
+  background-color: rgb(119, 100, 100);
+  width: max-content;
+  border-radius: 10px;
+  padding: 1.2rem 0rem 1.2rem 0rem;
+  color: #f1f1f1;
+}
+
+footer{
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#myModal1, #myModal2{
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 5;
+  display: none; /* Hidden by default */
+  /* position: fixed; Stay in place */
+  /* z-index: 1; Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content1 {
+  background: url("./img/call_logo.jpg") no-repeat center;
+  height: 400px;
+  max-width: 28rem;
+  padding: 0.6rem;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-content2 {
+  background: url("./img/call.jpg") no-repeat center;
+  height: 400px;
+  max-width: 28rem;
+  padding: 0.6rem;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: animatetop2;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop2;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {
+      top: -300px;
+      opacity: 0
+  }
+
+  to {
+      top: 0;
+      opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+      top: -300px;
+      opacity: 0
+  }
+
+  to {
+      top: 0;
+      opacity: 1
+  }
+}
+
+@keyframes animatetop2 {
+  from {
+      top: -300px;
+      opacity: 0
+  }
+
+  to {
+      top: 0;
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes animatetop2 {
+  from {
+      top: -300px;
+      opacity: 0
+  }
+
+  to {
+      top: 0;
+      opacity: 1
+  }
+}
+
+.modal-body{
+  text-align: center;
+} 
+
+/* The Close Button */
+#close, #close2 {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:768px){
+
+nav, footer{
+  width: 100%;
+}
+
+.second h1{
+  font-size: 30px;
+}
+
+#offers, .cv, .team{
+  display: block;
+}
+
+.work, .achieve, .teamlead{
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.achieve img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sproof img {
+  vertical-align: middle;
+  max-width: 100%;
+  padding-left: 0px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+}
